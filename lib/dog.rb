@@ -25,7 +25,8 @@ class Dog
       puts dog.name
     end
   end
-
-
+  def self.all
+    puts @@all.collect { |dog| dog.name } #class method that puts out the name of each dog
+  end
 
 end
