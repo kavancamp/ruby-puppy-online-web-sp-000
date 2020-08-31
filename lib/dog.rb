@@ -20,8 +20,6 @@ class Dog
     end
   end
 
-
-
   def self.clear_all
     @@all.clear
   end
@@ -30,7 +28,6 @@ class Dog
     @@all.each do |dog|
       puts dog.name
     end
-    save.name
   end
 
 
