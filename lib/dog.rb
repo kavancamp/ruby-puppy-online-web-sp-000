@@ -7,19 +7,20 @@ class Dog
   def initialize(name)
     @name = name
     @@all << self
-    save
+    return save
       end
 
+      def save
+        self.class.all << self
+       end
+      
   def self.all
     @@all.each do |dog|
       puts dog.name
     end
   end
 
-  def save
-    self.class.all << self
-
-  end
+  
 
   def self.clear_all
     @@all.clear
